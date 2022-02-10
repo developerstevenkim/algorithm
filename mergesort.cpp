@@ -1,9 +1,6 @@
 #include <stdio.h>
 int number = 8;
-
-int size;
 int sorted[8];
-int count = 0;
 
 void merge(int a[], int m, int middle, int n) {
     int i = m;
@@ -47,7 +44,7 @@ void mergeSort(int a[], int m, int n) {
 }
 
 int main(void) {
-    int array[number] = {7, 6, 5, 8, 3, 5, 9, 1};
+    int array[8] = {7, 6, 5, 8, 3, 5, 9, 1};
     mergeSort(array, 0, number - 1);
     for(int i = 0; i < number; i++) {
         printf("%d ", array[i]);
